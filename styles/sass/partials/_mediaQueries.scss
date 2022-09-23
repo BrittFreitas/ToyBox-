@@ -1,0 +1,36 @@
+@media (max-width: 1000px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+    // Not going to do anything with this right now 
+}
+
+@media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    header {
+        flex-direction: column;
+    }
+    .footerFlexContainer {
+        flex-direction: column;
+        align-items: center;
+        .footerNav {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+    .navBar .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .categoryGallery .items {
+        width: 100%;
+    }
+    header .headerContent, header .headerImgContainer {
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}

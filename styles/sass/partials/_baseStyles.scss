@@ -1,0 +1,65 @@
+@use "variables" as *; 
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    color: $primaryColour;
+    background-color: transparent;
+    padding: 18px 36px;
+    border: 2px solid $primaryColour;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $primaryColour;
+        color: $white;
+    }
+    &:focus {
+        background-color: $primaryColour;
+        color: $white;
+    }
+    //styles for buttons in top nav
+    &.menuIcon {
+        padding: 0;
+        border: 0;
+        transition: 0.3s;
+        &:hover {
+            background-color: transparent;
+            color: $white;
+        }
+        &:focus {
+            background-color: transparent;
+            color: $white
+        }
+    }
+}
+
+//nesting &.button within the a denotes anchor with a class of button
+a {
+    &.button {
+        color: $primaryColour;
+        background-color: transparent;
+        border: 2px solid  $primaryColour;
+        padding: 18px 36px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+        transition: 0.3s;
+        &:hover {
+            background-color: $primaryColour;
+            color: $white;
+        }
+        &:focus {
+            background-color: $primaryColour;
+            color: $white;
+        }
+    }
+}

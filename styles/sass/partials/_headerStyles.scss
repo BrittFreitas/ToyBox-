@@ -1,0 +1,24 @@
+@use "variables" as*;
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $tertiaryColour;
+    margin-bottom: 90px;
+    align-items: center;
+    .headerImgContainer {
+        width: 45%;
+        //this helps the img not break out of it's container
+        img {
+            max-width: 100%;
+        }
+    }
+    .headerContent {
+        width: 55%;
+        color: $primaryColour;
+        .contentContainer {
+            margin: 0 auto;
+            width: 65%;
+        } 
+    }
+}

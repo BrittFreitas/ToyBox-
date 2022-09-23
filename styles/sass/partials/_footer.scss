@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+footer {
+    background-color: $primaryColour;
+    color: $white;
+    padding: 90px 0 50px 0;
+    h4 {
+        color: $white;
+    }
+    .footerFlexContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerNav {
+        width: 40%;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            ul {
+               width: 33%; 
+            }
+            a {
+                color: rgba($color: $white, $alpha: 0.5);
+                font-size: 0.8rem;
+                line-height: 0.5;
+                &:hover {
+                    color: rgba($color: $white, $alpha: 1);
+                }
+                &:focus {
+                    color: rgba($color: $white, $alpha: 1);
+                }
+            }
+        }
+    }
+}
