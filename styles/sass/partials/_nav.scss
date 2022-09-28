@@ -64,33 +64,9 @@
            color: rgba($color: $white, $alpha:0.5)
         }
     }
+    &.open {
+        left: 0px;
+    }
 }
 
-.slideOutNav2 {
-    background-color: $primaryColour;
-    color: $white;
-    width: 100%;
-    max-width: 500px;
-    padding: 35px 50px;
-    border-right: 1px solid $secondaryColour;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    transition: 0.75s;
-    .buttonContainer {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .mainMenu a {
-        font-family: $headingFont;
-        font-size: 1.6rem;
-        line-height: 2.5rem;
-        color: rgba($color: $white, $alpha:1);
-        &:hover {
-            color: rgba($color: $white, $alpha:0.5)
-        }
-        &:focus {
-           color: rgba($color: $white, $alpha:0.5)
-        }
-    }
-}
+
